@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksey Yakovlev](https://up.htmlacademy.ru/htmlcss/34/user/2041611).
-* Наставник: `Неизвестно`.
+* Наставник: [Амина Омарова](https://htmlacademy.ru/profile/ami).
 
 ---
 
