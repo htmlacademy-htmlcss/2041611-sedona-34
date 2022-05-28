@@ -37,7 +37,9 @@
               </a>
               <span class="navigation-favorite-counter">12</span>
             </li>
-              <button class="button button-brown">Хочу сюда!</button>
+            <li class="navigation-item">
+              <a href="#" class="button button-brown">Хочу сюда!</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -66,6 +68,7 @@
                 <h3 class="advantages-title">Настоящий городок</h3>
                 <span class="adventages-number">№1</span>
                 <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                <img class="adventages-photo" src="#" alt="Административное здание в городке Седона">
               </div>
             </li>
             <li class="adventages-item">
@@ -82,6 +85,7 @@
             </li>
             <li class="adventages-item">
               <div class="adventages-block">
+                <img class="adventages-photo" src="#" alt="">
                 <h3 class="advantages-title">Там есть мост дьявола</h3>
                 <span class="adventages-number">№2</span>
                 <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -106,7 +110,6 @@
         </section>
 
         <section class="find-hotel">
-          <h2 class="visually-hidden">Найти гостиницу в Седоне</h2>
           <h2 class="find-hotel-title">Заинтересовались?</h2>
           <p class="find-hotel-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button button-find">Поиск гостиницы в Седоне</button>
@@ -127,21 +130,31 @@
               </div>
               <div class="modal-option modal-option-guests">
                 <label class="modal-label" for="adults">Взрослые:</label>
-                <button  type="button" class="button button-less"></button>
+                <button  type="button" class="button button-less">
+                  <span class="visually-hidden">Кнопка меньше</span>
+                </button>
                 <input type="number" class="modal-input modal-input-guests" id="adults" name="adults" value="2">
-                <button type="button" class="button button-more"></button>
+                <button type="button" class="button button-more">
+                  <span class="visually-hidden">Кнопка больше</span>
+                </button>
               </div>
               <div class="modal-option modal-option-guests modal-option-guests-children">
                 <label class="modal-label" for="children">Дети:</label>
                 <div class="modal-children-explanation">
-                  <span class="visually-hidden">Показать подсказку</span>
+                  <div class="modal-children-round">
+                    <span class="visually-hidden">Показать подсказку</span>
+                  </div>
                   <p class="modal-children-message">
                     Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
                   </p>
                 </div>
-                <button type="button" class="button button-less"></button>
+                <button type="button" class="button button-less">
+                  <span class="visually-hidden">Кнопка меньше</span>
+                </button>
                 <input type="number" class="modal-input modal-input-guests" id="children" name="children" value="1">
-                <button type="button" class="button button-more"></button>
+                <button type="button" class="button button-more">
+                  <span class="visually-hidden">Кнопка больше</span>
+                </button>
               </div>
               <button type="submit" class="button button-modal-find">Найти</button>
             </form>
@@ -153,7 +166,7 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="newsletter-field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+            <input class="newsletter-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
             <button class="button button-newsletter" type="submit">Подписаться</button>
           </form>
         </section>
