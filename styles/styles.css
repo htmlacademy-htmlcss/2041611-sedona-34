@@ -53,6 +53,7 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -61,6 +62,9 @@ body {
   width: 1px;
   height: 1px;
   margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 /* Pages */
@@ -81,6 +85,7 @@ body {
 .navigation-list {
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 20px 17px;
   gap: 34px;
@@ -130,8 +135,8 @@ body {
 }
 
 .navigation-icon {
-  width: 42px;
-  height: 66px;
+  min-width: 42px;
+  min-height: 66px;
 }
 
 .navigation-search {
@@ -177,9 +182,13 @@ body {
 
     /* Advantages Intro */
 
+.advantages-intro {
+  padding: 63px 272px 90px;
+}
+
 .advantages-opening {
   margin: 0;
-  padding: 63px 290px 31px;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -189,7 +198,6 @@ body {
 
 .advantages-reasons {
   margin: 0;
-  padding: 0 272px 90px;
   color: #333333;
   font-size: 22px;
   line-height: 26px;
@@ -227,9 +235,10 @@ body {
 
 .advantages-block {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  width: 100%;
   text-align: center;
 }
 
@@ -263,12 +272,12 @@ body {
     /* Find Hotel */
 
 .find-hotel-content {
-  min-height: 417px;
+  padding: 91px 312px 29px;
 }
 
 .find-hotel-title {
   margin: 0;
-  padding: 91px 451px 29px 452px;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -278,7 +287,7 @@ body {
 
 .find-hotel-description {
   margin: 0;
-  padding: 0 304px 56px;
+  margin-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -293,7 +302,6 @@ body {
   display: block;
   width: 574px;
   height: 60px;
-  text-align: center;
   border: none;
   border-radius: 4px;
 }
@@ -364,7 +372,6 @@ body {
 .newsletter {
   background: url("../images/main/subscribe-background.png") no-repeat;
   color: #FFFFFF;
-  max-height: 411px;
 }
 
 .newsletter-form {
@@ -430,6 +437,7 @@ body {
 
 .page-footer {
   display: flex;
+  justify-content: space-between;
   padding: 40px 70px 30px;
 }
 
@@ -437,7 +445,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  width: 142px;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -456,18 +464,11 @@ body {
 }
 
 .social-link-facebook {
-  background: url("../images/footer/social-facebook.svg") no-repeat;
+  background: url("../images/footer/social-facebook.svg") center no-repeat;
 }
 
 .social-link-youtube {
   background: url("../images/footer/social-youtube.svg") no-repeat;
-}
-
-.page-footer-contacts {
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: 720px;
 }
 
 .page-footer-contacts-address-phone {
@@ -552,7 +553,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 167px;
+  width: 100%;
 }
 
 .catalog-filter-block {
@@ -595,11 +596,6 @@ body {
   display: flex;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
- display: none;
-}
-
 .control:before {
   content: "";
   display: inline-block;
@@ -616,8 +612,6 @@ input[type="radio"] {
 
  input[type="checkbox"]:checked + .control:before {
   content: "";
-  display: block;
-
  }
 
  .control-housing:before {
@@ -824,7 +818,7 @@ input[type="radio"] {
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  gap: 20px;
+  width: 100%;
 }
 
 .product-card-group,
@@ -836,7 +830,8 @@ input[type="radio"] {
 
 .product-card-buttons {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .product-card-buttons .button {
@@ -858,9 +853,10 @@ input[type="radio"] {
 }
 
 .product-card-ratings {
-  display: flex;
   padding: 0;
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .product-card-rating {
