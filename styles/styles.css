@@ -83,17 +83,18 @@ body {
 }
 
 .navigation-list {
+  padding: 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 20px 17px;
-  gap: 34px;
   list-style: none;
 }
 
 .navigation-link {
+  display: block;
   color: inherit;
+  padding: 20px 34px 20px 0;
   line-height: 26px;
   font-size: 20px;
   font-weight: 700;
@@ -103,7 +104,6 @@ body {
 }
 
 .navigation-link-active {
-  display: block;
   position: relative;
   top: 2px;
 }
@@ -449,26 +449,23 @@ body {
   list-style: none;
 }
 
-.page-footer-social-item {
-  padding: 10px;
-}
-
 .social-link {
   display: block;
   width: 20px;
   height: 20px;
+  padding: 10px 12px;
 }
 
 .social-link-twitter {
-  background: url("../images/footer/social-twitter.svg") no-repeat;
+  background: url("../images/footer/social-twitter.svg") no-repeat center;
 }
 
 .social-link-facebook {
-  background: url("../images/footer/social-facebook.svg") center no-repeat;
+  background: url("../images/footer/social-facebook.svg") no-repeat center;
 }
 
 .social-link-youtube {
-  background: url("../images/footer/social-youtube.svg") no-repeat;
+  background: url("../images/footer/social-youtube.svg") no-repeat center;
 }
 
 .page-footer-contacts-address-phone {
@@ -605,24 +602,22 @@ body {
   width: 20px;
   height: 20px;
   background-color: #ffffff;
-  background-image: url("../images/catalog/select-arrow.svg");
-  background-repeat: no-repeat;
   border-radius: 5px;
  }
 
  input[type="checkbox"]:checked + .control:before {
   content: "";
+  background: url("../images/catalog/select-arrow.svg") no-repeat;
  }
 
  .control-housing:before {
-  content: "";
-  background-image: url("../images/catalog/radio-ellipse.svg");
-  background-position: center;
   border-radius: 50%;
  }
 
  input[type="radio"]:checked + .control-housing:before {
   content: "";
+  background-image: url("../images/catalog/radio-ellipse.svg");
+  background-position: center;
  }
 
 .control-price {
@@ -898,28 +893,35 @@ body {
 
 .pagination-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  width: 60px;
-  height: 60px;
-  background: #82B3D3;
+  background-color: #82B3D3;
   border: 1px solid #82B3D3;
   border-radius: 4px;
-  box-sizing: border-box;
 }
 
 .pagination-link {
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 12px 24px;
   color: #ffffff;
+  box-sizing: border-box;
   text-decoration: none;
 }
 
 .pagination-current {
-  color: #000000;
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
+}
+
+.pagination-select {
+  color: #000000;
+}
+
+.pagination-end {
+  padding: 12px 18px;
 }
 
 .pagination-items {
