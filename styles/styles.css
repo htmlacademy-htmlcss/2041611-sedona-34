@@ -155,8 +155,8 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  bottom: -1px;
   left: 0;
+  bottom: 0;
   border: 1px solid #756257;
   box-sizing: border-box;
 }
@@ -377,10 +377,14 @@ body {
   text-align: center;
 }
 
+.advantages-item:nth-child(2) .advantages-description {
+  width: 210px;
+}
+
 /* Find Hotel */
 
 .find-hotel-content {
-  padding: 91px 312px 93px;
+  padding: 91px 304px 93px;
 }
 
 .find-hotel-title {
@@ -390,16 +394,24 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
   margin-bottom: 29px;
 }
 
 .find-hotel-description {
-  margin: 0;
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   color: #333333;
   margin-bottom: 56px;
+}
+
+.find-hotel-description_line-1 {
+  margin: 0;
+  text-align: center;
+}
+
+.find-hotel-description_line-2 {
+  margin: 0;
 }
 
 .button-find {
