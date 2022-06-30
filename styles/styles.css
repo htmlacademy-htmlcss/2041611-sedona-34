@@ -259,7 +259,7 @@ body {
 .intro {
   background: url("../images/main/index-background.jpg") center no-repeat;
   background-size: cover;
-  background-color: #ffffff;
+  background-color: #68a2ca;
   min-height: 485px;
   position: relative;
 }
@@ -461,7 +461,7 @@ body {
 .newsletter {
   background: url("../images/main/subscribe-background.jpg") no-repeat;
   background-size: 100% 100%;
-  background-color: #ffffff;
+  background-color: #81b3d3;
   color: #ffffff;
 }
 
@@ -1013,7 +1013,7 @@ body {
 .catalog {
   background: url("../images/catalog/background-filter.jpg") no-repeat;
   background-size: 100% 100%;
-  background-color: #ffffff;
+  background-color: #81b3d3;
   padding: 35px 70px 70px;
 }
 
