@@ -256,18 +256,20 @@ body {
 
 /* Body*/
 
+.intro {
+  background: url("../images/main/index-background.jpg") center no-repeat;
+  background-size: cover;
+  background-color: #ffffff;
+  min-height: 485px;
+  position: relative;
+}
+
 .intro-title {
   display: block;
   margin: 0 auto;
   padding-top: 51px;
 }
 
-.intro {
-  background: url("../images/main/index-background.jpg") center no-repeat;
-  background-size: cover;
-  min-height: 485px;
-  position: relative;
-}
 
 .intro::after {
   content: "";
@@ -333,7 +335,6 @@ body {
 
 .advantages-block {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -369,12 +370,41 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  color: inherit;
+  margin-bottom: 30px;
   text-transform: uppercase;
+}
+
+.advantages-number {
+  margin-bottom: 30px;
+}
+
+.advantages-icon {
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin-bottom: 30px;
+}
+
+.advantages-house {
+  background: url("../images/main/advantages/house.svg") no-repeat;
+}
+
+.advantages-food {
+  background: url("../images/main/advantages/food.svg") no-repeat;
+}
+
+.advantages-souvenirs {
+  background: url("../images/main/advantages/souvenirs.svg") no-repeat;
 }
 
 .advantages-description {
   margin: 0;
   text-align: center;
+}
+
+.advantages-item:not(:first-child):not(:nth-child(5)) .advantages-description {
+  color: #333333;
 }
 
 .advantages-item:nth-child(2) .advantages-description {
@@ -429,8 +459,9 @@ body {
 /* Newsletter */
 
 .newsletter {
-  background: url("../images/main/subscribe-background.png") no-repeat;
+  background: url("../images/main/subscribe-background.jpg") no-repeat;
   background-size: 100% 100%;
+  background-color: #ffffff;
   color: #ffffff;
 }
 
@@ -943,6 +974,7 @@ body {
   height: 143px;
   transform: translateX(-50%);
   font-family: inherit;
+  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   padding: 15px 18px 18px 22px;
@@ -981,6 +1013,7 @@ body {
 .catalog {
   background: url("../images/catalog/background-filter.jpg") no-repeat;
   background-size: 100% 100%;
+  background-color: #ffffff;
   padding: 35px 70px 70px;
 }
 
@@ -1489,6 +1522,7 @@ body {
   margin: 0;
   width: 140px;
   min-height: 21px;
+  color: #333333;
 }
 
 .product-card-buttons .button,
@@ -1542,13 +1576,14 @@ body {
 
 .pagination {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   gap: 250px;
 }
 
 .pagination-list {
+  flex-wrap: wrap;
+  max-width: 50%;
   margin: 0;
   padding: 0;
   display: flex;
@@ -1619,6 +1654,7 @@ body {
 .select-control-items {
   width: 160px;
   height: 49px;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   padding: 0 21px 0 20px;
