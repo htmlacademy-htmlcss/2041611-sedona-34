@@ -382,20 +382,21 @@ body {
 .advantages-icon {
   display: block;
   width: 75px;
-  height: 72px;
-  margin-bottom: 30px;
+  height: 77px;
+  margin-bottom: 25px;
+
 }
 
 .advantages-house {
-  background: url("../images/main/advantages/house.svg") no-repeat;
+  background: url("../images/main/advantages/house.svg") no-repeat center;
 }
 
 .advantages-food {
-  background: url("../images/main/advantages/food.svg") no-repeat;
+  background: url("../images/main/advantages/food.svg") no-repeat center;
 }
 
 .advantages-souvenirs {
-  background: url("../images/main/advantages/souvenirs.svg") no-repeat;
+  background: url("../images/main/advantages/souvenirs.svg") no-repeat center;
 }
 
 .advantages-description {
@@ -1685,6 +1686,7 @@ body {
 
 .newsletter-catalog {
   background-image: none;
+  background-color: #ffffff;
 }
 
 .newsletter-catalog-title {
