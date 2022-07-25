@@ -636,10 +636,6 @@ body {
   display: none;
 }
 
-.modal-content {
-  position: relative;
-}
-
 .modal {
   margin: auto;
   width: 715px;
@@ -648,6 +644,10 @@ body {
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   box-sizing: border-box;
+}
+
+.modal-content {
+  position: relative;
 }
 
 .modal-title {
